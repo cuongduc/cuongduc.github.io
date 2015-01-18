@@ -1,0 +1,248 @@
+/*
+ |----------------------------------------------------
+ | custom.css
+ |----------------------------------------------------
+ |
+ | Custom Style Sheet for Homework 1
+ | @author: Dao Duc Cuong
+ | @createdat: 18 January 2015 (Sunday) 10:47
+ |
+ */
+ @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,vietnamese);
+
+ body {
+ 	font-family: 'Open Sans', sans-serif;
+ 	font-size: 14px;
+ }
+
+ p {
+ 	margin-bottom: 5px;
+ }
+
+ p>span.language-list {
+ 	font-weight: normal;
+ }
+
+ h1, h2, h3, h4, a {
+ 	color: #A52714;
+ }
+
+ /*#content-wrapper,
+ #footer-wrapper {
+ 	width: 85%;
+ }*/
+/*
+ #content-wrapper{
+ 	padding-top: 40px;	
+ }*/
+ 
+ /**
+  * Navigation bar
+  */
+ .navigation-bar {
+ 	position: fixed;
+ 	top: 0;
+ 	width: 100%;
+ 	height: 65px;
+ 	background-color: #fcfcfc;
+ 	box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+ 	z-index: 1000;
+ }
+
+ .navigation-bar .nav-brand {
+	padding-top: 8px;
+	padding-bottom: 5px;
+	
+ }
+
+ .navigation-bar .nav-brand .brand-image {
+ 	width: 48px;
+ 	height: 48px;
+ 	margin-top: -5px;
+ 	border-radius: 48px;
+ 	border: 4px solid #fcfcfc;
+ 	box-shadow: 0px 0px 6px rgba(0,0,0,0.09);
+ }
+
+ .navigation-bar .nav-brand .nav-title {
+ 	padding-left: 10px;
+ 	padding-right: 10px;
+ 	padding-top: 6px;
+ 	padding-bottom: 6px;
+ 	margin-top: 4px;
+ 	border-right: 1px dotted #ccc;
+ }
+
+ .navigation-bar .nav-brand .nav-desc h5{
+	margin-left: 5px;
+ }
+
+ .navigation-bar .nav-brand .nav-title > h3 {
+ 	margin-top: 0;
+ 	margin-bottom: 0;
+ 	font-weight: 300;
+ }
+
+ .navigation-bar .nav-brand img,
+ .navigation-bar .nav-brand div,
+ .navigation-bar .nav-brand {
+	display: inline-block;
+ }
+
+ .navigation-bar ul {
+ 	list-style: none;
+ 	margin-top: 20px;
+ }
+
+ .navigation-bar ul > li {
+ 	padding: 4px 8px 4px 8px;
+ }
+
+ .navigation-bar ul > li:first-child {
+	padding-left: 0;
+ }
+
+ .navigation-bar ul > li:last-child {
+ 	padding-right: 0;
+ }
+
+ .navigation-bar ul > li > a {
+	color: #333 !important;
+ }
+
+ .navigation-bar ul > li > a:hover {
+ 	text-decoration: none;
+	color: #A52714 !important;
+ }
+ /**
+  * Header
+  */
+ .header {
+	margin-bottom: 50px;
+	padding-bottom: 20px;
+	/*border-bottom: 1px dotted #ccc;*/
+ }
+
+ .header .cover-img {
+ 	width: 100%;
+ 	height: 335px;
+ 	margin-top: -2px;
+ 	border-bottom-right-radius: 2px;
+ 	border-bottom-left-radius: 2px;
+ 	border: 1px solid #ddd;
+ 	background-color: #ccc;
+ 	background: url('../img/cover.jpg') no-repeat;
+ 	background-size: cover;
+ 	background-position: 0px -90px;
+ }
+
+ .header .cover-img:hover {
+ 	cursor: pointer;
+ }
+
+ .header .cover-img .cover-info {
+ 	position: absolute;
+ 	top: 10px;
+ 	right: 85px;
+ 	text-align: center;
+ 	width: 290px;
+ 	padding: 6px;
+ 	background: rgba(0,0,0,0.5);
+ 	border-radius: 4px;
+ 	border: 1px solid #d3d3d3;
+ 	box-shadow: 0px 0px 8px rgba(0,0,0,0.22);
+ }
+
+ .header .cover-img .cover-info span {
+ 	color: rgba(255,255,255,0.88);
+ }
+
+ .header .cover-img .cover-info span > i {
+ 	margin-right: 4px;
+ }
+ 
+ .header #header-container {
+	position: absolute;
+	top: 195px;
+ }
+
+ .header #header-container .avatar-wrapper {
+ 	padding-left: 35px;
+ }
+
+ .header .title-wrapper {
+ 	padding-top: 35px;
+	margin-right: 290px;
+ }
+
+ .header .title-wrapper .meta > h3 {
+ 	margin-top: 5px;
+ 	margin-bottom: 0;
+ 	color: #fcfcfc;
+	text-shadow: 0px 0px 8px rgba(0,0,0,0.59);
+ }
+
+ .header .name .title {
+	font-size: 52px;
+	font-weight: 300;
+	margin-top: 0;
+	margin-bottom: 0;
+	color: #fff;
+	text-shadow: 0px 0px 8px rgba(0,0,0,0.59);
+ }
+
+ .avatar-img {
+ 	width: 180px;
+ 	height: 180px;
+ 	border-radius: 2px;
+ 	border: 5px solid #fafafa;
+ 	box-shadow: 0px 0px 10px rgba(0,0,0,0.09);
+ }
+
+ /**
+  * Body
+  */
+ .body-section {
+ 	margin-bottom: 20px;
+ }
+
+ .body-section .section-title {
+ 	padding: 5px 0px 5px 15px;
+ 	margin-bottom: 10px;
+ 	border-left: 4px solid #A52714;
+ 	background-color: #fafafa;
+ }
+
+ .body-section .section-title h3 {
+ 	margin-top: 0px;
+ 	margin-bottom: 0px;
+ }
+
+ .body-section .section-body p > i {
+ 	margin-right: 5px;
+ }
+ .body-section .item {
+	margin-bottom: 10px;
+ }
+
+ .body-section .item .item-title > p {
+ 	font-weight: 600;
+ 	color: #333;
+ }
+
+ #language .item-title > p {
+ 	font-weight: normal;
+ }
+ /**
+  * Footer
+  */
+ .footer {
+ 	margin-top: 10px;
+ 	padding: 10px 0 10px 10px;
+ 	background-color: #eaeaea;
+ 	border-top: 2px solid #A52714 ;
+ }
+
+ .footer p {
+ 	margin-bottom: 0px;
+ }
